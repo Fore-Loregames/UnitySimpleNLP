@@ -48,10 +48,10 @@ namespace EveAI.Assets.Eve.scripts
             rootObject = JsonUtility.FromJson<RootObject>(jsonString);
             // Initialize Feature Extractor with training sentences
             List<string> trainingSentences = rootObject.intents.SelectMany(intent => intent.patterns).ToList();
-            featureExtractor = new SimpleFeatureExtractor(trainingSentences, 2); // Example with bi-grams
+            featureExtractor = new SimpleFeatureExtractor(trainingSentences, 2); 
 
             // Initialize the neural network
-            int inputSize = featureExtractor.vocabulary.Count; // Use the size of the enriched vocabulary
+            int inputSize = featureExtractor.vocabulary.Count; 
             int outputSize = rootObject.intents.Count;
             network = new SimpleNeuralNetwork(inputSize, hiddenSize, outputSize);
 
@@ -106,7 +106,7 @@ namespace EveAI.Assets.Eve.scripts
 
                 foreach (var pattern in intent.patterns)
                 {
-                    int[] input = featureExtractor.GetFeatures(pattern); // Use enriched feature vector
+                    int[] input = featureExtractor.GetFeatures(pattern); 
                     trainingInputs.Add(input);
                     trainingOutputs.Add(output);
                 }
@@ -119,7 +119,7 @@ namespace EveAI.Assets.Eve.scripts
         public string PredictTag(string sentence)
         {
             Debug.Log("Predicting tag for sentence: " + sentence);
-            int[] features = featureExtractor.GetFeatures(sentence); // Use enriched features for prediction
+            int[] features = featureExtractor.GetFeatures(sentence); 
             float[] output = network.Forward(features);
             int maxIndex = output.ToList().IndexOf(output.Max());
             return tags[maxIndex];
