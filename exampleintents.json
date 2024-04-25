@@ -1,0 +1,200 @@
+{
+  "intents": [
+    {
+      "tag": "general_greeting",
+      "patterns": [
+        "Hello",
+        "Hi",
+        "How are you?",
+        "Good morning",
+        "Hey, are you there?",
+        "Can you help me?",
+        "What's up?",
+        "Do you have a minute?",
+        "Hey, what's going on?",
+        "Are you busy?"
+      ],
+      "responses": [
+        "Hello! How can I assist you?",
+        "Hi there!",
+        "I'm doing well, thank you! How are you?",
+        "Good morning! What can I do for you?",
+        "Hey! I'm here.",
+        "Sure, how can I help?",
+        "Not much, what's up with you?",
+        "Yes, I have a minute. What's on your mind?",
+        "Hey! Nothing much, just here to help.",
+        "A little busy, but I can spare some time. What do you need?"
+      ]
+    },
+    {
+      "tag": "identity",
+      "patterns": [
+        "Who are you?",
+        "What is your name?",
+        "Tell me about yourself",
+        "What are you?",
+        "Are you a robot?",
+        "Do you have an identity?",
+        "Are you human or machine?",
+        "Who am I speaking with?",
+        "What should I call you?"
+      ],
+      "responses": [
+        "I am an AI assistant designed to help you.",
+        "My name is Eve, your virtual assistant.",
+        "I'm Eve, a virtual entity here to assist you.",
+        "I am an artificial intelligence programmed to assist users.",
+        "Yes, I am a robot, specifically an AI assistant.",
+        "I do have an identity; I am Eve, an AI helper.",
+        "I am a machine, an AI created to provide assistance."
+      ]
+    },
+    {
+      "tag": "joke_request",
+      "patterns": [
+        "Tell me a joke",
+        "I need to laugh",
+        "Can you share a funny joke?",
+        "Make me laugh",
+        "I want to hear something funny"
+      ],
+      "responses": [
+        "Why don't scientists trust atoms? Because they make up everything!",
+        "I told my computer I needed a break, and now it won’t stop sending me Kit-Kat ads.",
+        "What do you call a belt made of watches? A waist of time!",
+        "Parallel lines have so much in common. It’s a shame they’ll never meet.",
+        "What do you call fake spaghetti? An impasta!"
+      ]
+    },
+    {
+      "tag": "general_farewell",
+      "patterns": [
+        "Goodbye",
+        "See you later",
+        "Bye",
+        "Farewell",
+        "Catch you later",
+        "I have to go"
+      ],
+      "responses": [
+        "Goodbye! If you need anything else, just ask.",
+        "See you later! Don't hesitate to return if you have more questions.",
+        "Bye! Have a great day.",
+        "Farewell! Hope to assist you again soon.",
+        "Catch you later! Remember, I'm here to help.",
+        "Understood, I'm here whenever you need assistance."
+      ]
+    },
+    {
+      "tag": "general_goodbye",
+      "patterns": [
+        "Goodbye",
+        "See you later",
+        "Bye",
+        "Farewell",
+        "Catch you later",
+        "I have to go"
+      ],
+      "responses": [
+        "Goodbye! If you need anything else, just ask.",
+        "See you later! Don't hesitate to return if you have more questions.",
+        "Bye! Have a great day.",
+        "Farewell! Hope to assist you again soon.",
+        "Catch you later! Remember, I'm here to help.",
+        "Understood, I'm here whenever you need assistance."
+      ]
+    },
+    {
+      "tag": "sad_greeting",
+      "patterns": ["I'm feeling down", "Just sad today", "Not in a good place"],
+      "responses": [
+        "I'm here for you. Want to talk about it?",
+        "I'm sorry to hear that. I'm here if you need me."
+      ]
+    },
+    {
+      "tag": "angry_greeting",
+      "patterns": [
+        "Everything's annoying me",
+        "I'm so mad right now",
+        "I'm frustrated"
+      ],
+      "responses": [
+        "I can sense you're upset. Want to let it all out?",
+        "I'm here to listen. What's got you feeling this way?"
+      ]
+    },
+    {
+      "tag": "worried_intent",
+      "patterns": [
+        "I'm really worried",
+        "I've been feeling anxious",
+        "I can't stop worrying about this",
+        "Something's been bothering me",
+        "I'm feeling so anxious lately",
+        "I've been worrying a lot"
+      ],
+      "responses": [
+        "It sounds like you're carrying a lot on your shoulders. Want to talk about what's worrying you?",
+        "I'm here for you. Sharing worries can sometimes make them feel smaller."
+      ]
+    },
+    {
+      "tag": "excited_intent",
+      "patterns": [
+        "Guess what happened!",
+        "I'm so excited",
+        "I have some great news",
+        "Something amazing happened",
+        "I can't believe it"
+      ],
+      "responses": [
+        "That sounds exciting! Tell me more about it.",
+        "I love hearing good news. What happened?"
+      ]
+    },
+    {
+      "tag": "grateful_intent",
+      "patterns": [
+        "Thank you so much",
+        "I really appreciate it",
+        "You've been a big help",
+        "I can't thank you enough",
+        "Thanks a million"
+      ],
+      "responses": [
+        "You're very welcome! I'm just happy I could help.",
+        "It's my pleasure to be of assistance. Don't hesitate if you need anything else."
+      ]
+    },
+    {
+      "tag": "confused_intent",
+      "patterns": [
+        "I don't get it",
+        "I'm confused",
+        "Can you explain that again?",
+        "I didn't understand",
+        "What do you mean?"
+      ],
+      "responses": [
+        "Let's try to clear that up. What part are you unsure about?",
+        "I might not have explained that well. How can I make it clearer?"
+      ]
+    },
+    {
+      "tag": "disappointed_intent",
+      "patterns": [
+        "That's disappointing",
+        "I'm a bit let down",
+        "That didn't go as I hoped",
+        "I was expecting something else",
+        "Well, that's a bummer"
+      ],
+      "responses": [
+        "I'm sorry to hear that. Is there anything I can do to make things better?",
+        "Disappointments are tough. I'm here for you."
+      ]
+    }
+  ]
+}
